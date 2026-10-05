@@ -1,0 +1,19 @@
+[project]
+name = "m5-petit-switchbot"
+version = "0.1.0"
+description = "SwitchBot MCP server for M5 Petit - plugs, lights, curtains, sensors, IR remotes"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=3.0.2",
+    "mcp>=1.26.0",
+    "requests>=2.32.5",
+]
+
+[project.scripts]
+switchbot-mcp = "switchbot_mcp.switchbot_mcp:main"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
